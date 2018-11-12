@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  height: 100%;
+}
+
+/* Navigation Design */
+.navbar {
+  background-color: red;
+  padding: 10px 20px;
+  display: flex;
+  width: 100%;
+  position: inherit;
+}
+
+.navbtn {
+  color: white;
+  padding: 0px 30px 0px 0px;
+  font-size: 20px;
+  font-family: 'Teko', sans-serif;
+  font-weight: bold;
+}
+
+a.navlink:link {
+  text-decoration: none;
+  color: white;
+}
+
+a.navlink:hover {}
+
+/*Content */
+.topcontainer {
+  height: 100%;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-image: url("image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.centerbtn {
+  width: 200px;
+  height: 75px;
+  background-color: white;
+  color: black;
+  font-size: 35px;
+  font-family: 'Teko', sans-serif;
+  opacity: .5;
+}
+
+.centerbtn p {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.content {
+  background-color: green;
+  width: 100%;
+}
