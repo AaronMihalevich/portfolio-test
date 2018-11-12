@@ -1,7 +1,13 @@
+body{
+  background-color: #000;
+}
+
+
+
 .navbar {
-  background-color: lightblue;
+  background-color: black;
   padding: 10px;
-  color: black !important;
+  color: white !important;
 }
 
 /* header styles */
@@ -19,8 +25,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 200px;
+    margin-bottom: 0px;
+    box-shadow: 0px 8px 10px -10px black;
+    position:relative;
   }
 
+/* main content */
+/* cards */
+/* image card settings */
+ .container, .contentmain{
+  background-color: darkgrey;
+  margin-top: 0px;
+  padding-top: 20px;
+}
   .col-sm p{
     text-align: center;
   }
@@ -35,7 +52,7 @@
   }
 
 
-  /* image card settings */
+
 
 
 /* responsiveness */

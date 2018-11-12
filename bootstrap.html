@@ -13,7 +13,7 @@
 <body>
   <div class="container-fluid">
     <!-- Navbar section     -->
-    <nav class="navbar navbar-expand-sm navbar-light row">
+    <nav class="navbar navbar-expand-sm navbar-dark row">
       <a class="navbar-left">WELCOME HOME</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -45,7 +45,7 @@
 
   <!-- image card test(row 1) -->
   <!-- column 1 -->
-  <div class="container">
+  <div class="container contentmain">
     <div class="row justify-content-around">
       <div class="col-sm">
         <img src="image.jpg" alt="image">
@@ -99,7 +99,7 @@
     <!-- toggles test(row 2) -->
 
     <div class="row">
-        <!-- image -->
+      <!-- image -->
       <div class="col-sm">
         <img id="pagesection" src="image.jpg" alt="image">
         <p>
@@ -110,28 +110,46 @@
       <!-- info -->
       <div class="col-sm">
         <div class="row justify-content-start">
-        <p>
-          <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample4" role="button" aria-expanded="false" aria-controls="multiCollapseExample4">Toggle</a>
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample5" aria-expanded="false" aria-controls="multiCollapseExample5">Toggle</button>
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample6" aria-expanded="false" aria-controls="multiCollapseExample6">Toggle</button>
-        </p>
-        <div class="collapse multi-collapse" id="multiCollapseExample4">
-          <div class="card card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-          </div>
-        </div>
-        <div class="collapse multi-collapse" id="multiCollapseExample5">
-          <div class="card card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-          </div>
-        </div>
-        <div class="collapse multi-collapse" id="multiCollapseExample6">
-          <div class="card card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-          </div>
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">Disabled</a>
+            </li>
+            <!-- collapse 1 -->
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              </div>
+            </div>
+            <!-- collapse 2 -->
+            <div class="collapse" id="collapseExample2">
+              <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              </div>
+            </div>
+            <!-- collapse 3 -->
+            <div class="collapse" id="collapseExample3">
+              <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              </div>
+            </div>
+            <!-- collapse 4 -->
+            <div class="collapse" id="collapseExample4">
+              <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              </div>
+            </div>
+          </ul>
         </div>
       </div>
-    </div>
     </div>
 
     <!-- script -->
