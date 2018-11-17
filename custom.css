@@ -1,100 +1,170 @@
-body{
+body {
   background-color: #fff;
 }
 
+/* #646464
+#303030
+#4A4A4A
+#787878
+#8C8C8C
+  */
+/* Nav bar and drop down menu */
+.linkbox1 {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  min-width: 200px;
+  text-align: center;
+  color: #4A4A4A;
+}
 
+.linkbox1:hover {
+  color: #8C8C8C;
+}
 
-.navbar {
-  background-color: black;
-  padding: 10px;
-  color: white !important;
+#navbarToggleExternalContent {
+  background-color: #303030;
+  transition: 1s ease;
+  box-shadow: inset 0px 0px 60px -20px black
+}
+
+.container-fluid, {
+  background-color: #303030;
+  padding: 0px;
+  margin: 0px;
+}
+
+.mainnav {
+  background-color: #303030;
+}
+
+.btn {
+  border: none;
+  background-color: #303030;
 }
 
 /* header styles */
-.display-4 {
+.displaybox {
+  width: 100%;
   color: white;
   text-shadow: 1px 2px 1px #000;
-  text-align: center;
   font-family: cursive;
   font-size: 2rem;
 }
 
+.vertical-center {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
 .jumbotron, .jumbotron-fluid {
-    background-image: url("climbing2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 200px;
-    margin-bottom: 0px;
-    box-shadow: 0px 8px 10px -10px black;
-    position:relative;
-  }
+  background-image: url("climbing2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  margin-bottom: 0px;
+  box-shadow: 0px 8px 10px -10px black;
+  position: relative;
+}
 
 /* main content */
+/* image display test */
+.nav-field {
+  width: 100%;
+}
+
+.nav-item-box {
+  width: 300px;
+  border: 1px solid red;
+  text-align: center;
+}
+
+.img-info {
+  border-right: 1px solid #000;
+  text-align: left;
+}
+
+.img-text {
+  font-family: helvetica, sans-serif;
+  font-size: 15px;
+  color: #303030;
+  margin: 0px;
+  padding: 0px;
+}
+
+.img-text-light {
+  font-family: helvetica, sans-serif;
+  font-size: 10px;
+  color: #787878;
+  margin: 0px;
+  padding: 0px;
+}
+
+.img-container {
+  width: 90%
+}
+
 /* css transform test */
-.transform{
-  width: 50px;
+.transform {
+  width: 500px;
   height: 50px;
   background-color: red;
-  transition: width 1s ease;
-  transition: height 1s ease;
-  transition-delay: 1s;
+  transition: width 1s ease, height 1s ease;
+  transition-property:
+    left: 200px;
+  position: absolute;
 }
 
-.transform:hover{
-  width: 300px;
-  height: 200px;
-}
-
-/* drop down menu test */
-.linkbox{
-  width: 100%;
-  height:
-  background-color: blue;
-  margin: 30px;
+.transform:hover {
+  width: 1000px;
+  height: 300px;
+  left: 0px;
 }
 
 /* cards */
 /* image card settings */
- .container, .contentmain{
+.contentmain {
   background-color: darkgrey;
   margin-top: 0px;
   padding-top: 20px;
 }
-  .col-sm-4 p, img{
-    text-align: center;
-    width: 300px;
-    align-items: center;
-  }
 
+.col-sm-4 p, img {
+  text-align: center;
+  width: 300px;
+  align-items: center;
+}
 
+#pagesection {
+  width: 450px;
+}
 
-  #pagesection{
-    width: 450px;
-  }
 /* image test overlay top*/
-.overlay{
-position: absolute;
-bottom: 0;
-left: 20;
-right: 0;
-background-color: #008CBA;
-overflow: hidden;
-width: 80%;
-height: 0;
-transition: .5s ease;
-margin: 0px;
-padding: 0px;
-box-shadow: 0px 2px 3px -2px black;
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 20;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 80%;
+  height: 0;
+  transition: .5s ease;
+  margin: 0px;
+  padding: 0px;
+  box-shadow: 0px 2px 3px -2px black;
 }
 
 .col-sm-4:hover .overlay {
   height: 30%;
-
 }
 
-.overlayimg{
-  width: 100%
+.overlayimg {
+  width: 100%;
   margin: 0px;
 }
 
@@ -112,22 +182,22 @@ box-shadow: 0px 2px 3px -2px black;
 }
 
 /* image test overlay bottom */
-.overlaybtm{
-position: absolute;
-bottom: 30;
-left: 20;
-right: 0;
-background-color: #049bce;
-overflow:hidden;
-width: 80%;
-height: 0;
-transition: .5s ease;
--ms-flex: 1 1 auto;
-flex: 1 1 auto;
+.overlaybtm {
+  position: absolute;
+  bottom: 30;
+  left: 20;
+  right: 0;
+  background-color: #049bce;
+  overflow: hidden;
+  width: 80%;
+  height: 0;
+  transition: .5s ease;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
-.col-sm-4:hover .overlaybtm{
-  height:50%;
+.col-sm-4:hover .overlaybtm {
+  height: 50%;
 }
 
 .textbtm {
@@ -145,20 +215,21 @@ flex: 1 1 auto;
 }
 
 /* image test overlay bottom 2*/
-.card-body{
-position: sticky;
-background-color: #008CBA;
-width: 80%;
-height: 1;
-transition: .5s ease;
-margin: 0px;
-}
-
-.accordion{
+.card-body {
+  position: sticky;
+  background-color: #008CBA;
+  width: 80%;
+  height: 1;
+  transition: .5s ease;
   margin: 0px;
 }
-.col-sm-4:active .overlaybtm2{
-  height:50%;
+
+.accordion {
+  margin: 0px;
+}
+
+.col-sm-4:active .overlaybtm2 {
+  height: 50%;
 }
 
 .textbtm2 {
@@ -184,16 +255,13 @@ flex-direction: column;
 margin-right: 15px;
 margin-bottom: 0;
 margin-left: 15px; */
-
-
-.row{
-  padding:20px;
+.row {
+  padding: 20px;
 }
-
 
 /* responsiveness */
 @media (min-width: 576px) {
-    .jumbotron, .jumbotron-fluid{
+  .jumbotron, .jumbotron-fluid {
     height: 400px;
   }
 }
