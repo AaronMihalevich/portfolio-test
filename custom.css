@@ -73,28 +73,73 @@ body {
 
 /* main content */
 /* image display test */
-.nav-field {
+/* .nav-field {
   width: 100%;
+} */
+a[type=checkbox]:checked ~ div {
+   background: blue;
+}
+
+a[type=checkbox] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
 }
 
 .nav-item-box {
   width: 300px;
   border: 1px solid red;
   text-align: center;
+  background-color: #303030;
+  color: #646464
+}
+
+.nav-item-box:focus{
+  background-color: blue;
+}
+
+.nav-item-box:hover{
+  color: #fff;
+}
+
+
+.row-position{
+  position: relative;
+  margin-top: 50px;
+}
+
+.img-container {
+  width: 90%
+}
+
+#Landscape{
+  transition: 1s ease-in;
+}
+
+#macro{
+  transition: 1s ease-in;
 }
 
 .img-info {
+  background-color: #fff;
   border-right: 1px solid #000;
   text-align: left;
+  max-height: 300px;
+  position: absolute;
 }
+
+
 
 .img-text {
   font-family: helvetica, sans-serif;
-  font-size: 15px;
-  color: #303030;
+  font-size: 13px;
+  color: #4A4A4A;
   margin: 0px;
   padding: 0px;
+  padding-top: 10px;
 }
+
+
 
 .img-text-light {
   font-family: helvetica, sans-serif;
@@ -104,9 +149,36 @@ body {
   padding: 0px;
 }
 
-.img-container {
-  width: 90%
+.img-set {
+  width: 100%;
+  padding: 20px;
 }
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.photos{
+  position: sticky;
+  left: 400px;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 100%;
+}
+
 
 /* css transform test */
 .transform {
@@ -114,8 +186,6 @@ body {
   height: 50px;
   background-color: red;
   transition: width 1s ease, height 1s ease;
-  transition-property:
-    left: 200px;
   position: absolute;
 }
 
@@ -264,10 +334,19 @@ margin-left: 15px; */
   .jumbotron, .jumbotron-fluid {
     height: 400px;
   }
+  .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+  }
 }
 
 @media (min-width: 1200px) {
   .jumbotron, .jumbotron-fluid {
     height: 800px;
+  }
+
+  .responsive {
+      padding: 0 6px;
+      width: 24.99999%;
   }
 }
