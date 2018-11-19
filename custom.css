@@ -1,55 +1,218 @@
-body{
+body {
   background-color: #fff;
 }
 
+/* #646464
+#303030
+#4A4A4A
+#787878
+#8C8C8C
+  */
+/* Nav bar and drop down menu */
+.linkbox1 {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  min-width: 200px;
+  text-align: center;
+  color: #4A4A4A;
+}
 
+.linkbox1:hover {
+  color: #8C8C8C;
+}
 
-.navbar {
-  background-color: black;
-  padding: 10px;
-  color: white !important;
+#navbarToggleExternalContent {
+  background-color: #303030;
+  transition: 1s ease;
+  box-shadow: inset 0px 0px 60px -20px black
+}
+
+.container-fluid, {
+  background-color: #303030;
+  padding: 0px;
+  margin: 0px;
+}
+
+.mainnav {
+  background-color: #303030;
+}
+
+.btn {
+  border: none;
+  background-color: #303030;
 }
 
 /* header styles */
-.display-4 {
+.displaybox {
+  width: 100%;
   color: white;
   text-shadow: 1px 2px 1px #000;
-  text-align: center;
   font-family: cursive;
   font-size: 2rem;
 }
 
+.vertical-center {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
 .jumbotron, .jumbotron-fluid {
-    background-image: url("climbing2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 200px;
-    margin-bottom: 0px;
-    box-shadow: 0px 8px 10px -10px black;
-    position:relative;
-  }
+  background-image: url("climbing2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  margin-bottom: 0px;
+  box-shadow: 0px 8px 10px -10px black;
+  position: relative;
+}
 
 /* main content */
+/* image display test */
+
+a[type=checkbox]:checked ~ div {
+   background: blue;
+}
+
+a[type=checkbox] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
+
+.nav-item-box {
+  width: 300px;
+  border: 1px solid red;
+  text-align: center;
+  background-color: #303030;
+  color: #646464
+}
+
+.nav-item-box:focus{
+  background-color: blue;
+}
+
+.nav-item-box:hover{
+  color: #fff;
+}
+
+
+.row-position{
+  position: relative;
+  margin-top: 50px;
+}
+
+.img-container {
+  width: 90%
+}
+
+#Landscape{
+  transition: 1s ease-in;
+}
+
+#macro{
+  transition: 1s ease-in;
+}
+
+.img-info {
+  background-color: #fff;
+  border-right: 1px solid #000;
+  text-align: left;
+  max-height: 300px;
+  position: absolute;
+}
+
+
+
+.img-text {
+  font-family: helvetica, sans-serif;
+  font-size: 13px;
+  color: #4A4A4A;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 10px;
+}
+
+
+
+.img-text-light {
+  font-family: helvetica, sans-serif;
+  font-size: 10px;
+  color: #787878;
+  margin: 0px;
+  padding: 0px;
+}
+
+.img-set {
+  width: 100%;
+  padding: 20px;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.photos{
+  position: sticky;
+  left: 400px;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 100%;
+}
+
+
+/* css transform test */
+.transform {
+  width: 500px;
+  height: 50px;
+  background-color: red;
+  transition: width 1s ease, height 1s ease;
+  position: absolute;
+}
+
+.transform:hover {
+  width: 1000px;
+  height: 300px;
+  left: 0px;
+}
+
 /* cards */
 /* image card settings */
- .container, .contentmain{
+.contentmain {
   background-color: darkgrey;
   margin-top: 0px;
   padding-top: 20px;
 }
-  .col-sm-4 p, img{
-    text-align: center;
-    width: 300px;
-    align-items: center;
-  }
 
+.col-sm-4 p, img {
+  text-align: center;
+  width: 300px;
+  align-items: center;
+}
 
+#pagesection {
+  width: 450px;
+}
 
-  #pagesection{
-    width: 450px;
-  }
 /* image test overlay top*/
+<<<<<<< HEAD
 .overlay{
 position: absolute;
 bottom: 0;
@@ -61,6 +224,21 @@ width: 80%;
 height: 0;
 transition: .5s ease;
 /* box-shadow: 0px 2px 5px -2px black */
+=======
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 20;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 80%;
+  height: 0;
+  transition: .5s ease;
+  margin: 0px;
+  padding: 0px;
+  box-shadow: 0px 2px 3px -2px black;
+>>>>>>> b1effbff2e1518c37b970a578f233bea6e27a21f
 }
 
 .col-sm-4:hover .overlay{
@@ -68,9 +246,15 @@ transition: .5s ease;
   height: 30%;
 }
 
+<<<<<<< HEAD
 
 .overlayimg{
   width: 100%
+=======
+.overlayimg {
+  width: 100%;
+  margin: 0px;
+>>>>>>> b1effbff2e1518c37b970a578f233bea6e27a21f
 }
 
 .text {
@@ -87,6 +271,7 @@ transition: .5s ease;
 }
 
 /* image test overlay bottom */
+<<<<<<< HEAD
 .overlaybtm{
 position: absolute;
 bottom: 30;
@@ -103,6 +288,24 @@ flex: 1 1 auto;
 
 .col-sm-4:hover .overlaybtm{
   height:50%;
+=======
+.overlaybtm {
+  position: absolute;
+  bottom: 30;
+  left: 20;
+  right: 0;
+  background-color: #049bce;
+  overflow: hidden;
+  width: 80%;
+  height: 0;
+  transition: .5s ease;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.col-sm-4:hover .overlaybtm {
+  height: 50%;
+>>>>>>> b1effbff2e1518c37b970a578f233bea6e27a21f
 }
 
 .textbtm {
@@ -120,23 +323,22 @@ flex: 1 1 auto;
 }
 
 /* image test overlay bottom 2*/
-.overlaybtm2{
-position: absolute;
-bottom: 30;
-left: 20;
-right: 0;
-background-color: #008CBA;
-overflow:hidden;
-width: 80%;
-height: 0;
-transition: .5s ease;
--ms-flex: 1 1 auto;
-flex: 1 1 auto;
+.card-body {
+  position: sticky;
+  background-color: #008CBA;
+  width: 80%;
+  height: 1;
+  transition: .5s ease;
+  margin: 0px;
 }
 
-/* .col-sm-4:active .overlaybtm2{
-  height:50%;
-} */
+.accordion {
+  margin: 0px;
+}
+
+.col-sm-4:active .overlaybtm2 {
+  height: 50%;
+}
 
 .textbtm2 {
   color: white;
@@ -161,22 +363,28 @@ flex-direction: column;
 margin-right: 15px;
 margin-bottom: 0;
 margin-left: 15px; */
-
-
-.row{
-  padding:20px;
+.row {
+  padding: 20px;
 }
-
 
 /* responsiveness */
 @media (min-width: 576px) {
-    .jumbotron, .jumbotron-fluid{
+  .jumbotron, .jumbotron-fluid {
     height: 400px;
+  }
+  .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
   }
 }
 
 @media (min-width: 1200px) {
   .jumbotron, .jumbotron-fluid {
     height: 800px;
+  }
+
+  .responsive {
+      padding: 0 6px;
+      width: 24.99999%;
   }
 }
