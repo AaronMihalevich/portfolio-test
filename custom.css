@@ -73,7 +73,9 @@ body {
 
 /* main content */
 /* image display test */
-
+/* .nav-field {
+  width: 100%;
+} */
 a[type=checkbox]:checked ~ div {
    background: blue;
 }
