@@ -60,11 +60,14 @@ overflow: hidden;
 width: 80%;
 height: 0;
 transition: .5s ease;
+/* box-shadow: 0px 2px 5px -2px black */
 }
 
-.col-sm-4:hover .overlay {
+.col-sm-4:hover .overlay{
+  border-bottom: 2px solid white;
   height: 30%;
 }
+
 
 .overlayimg{
   width: 100%
@@ -89,7 +92,7 @@ position: absolute;
 bottom: 30;
 left: 20;
 right: 0;
-background-color: #008CBA;
+background-color: #02a1d6;
 overflow:hidden;
 width: 80%;
 height: 0;
@@ -98,7 +101,7 @@ transition: .5s ease;
 flex: 1 1 auto;
 }
 
-.col-sm-4:active .overlaybtm{
+.col-sm-4:hover .overlaybtm{
   height:50%;
 }
 
